@@ -1,0 +1,27 @@
+{
+	"name": "fluid-config",
+	"version": "0.0.1",
+	"main": "dist/index.js",
+	"typings": "dist/index.d.ts",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/node": "^11.13.0",
+		"tslint": "^5.15.0",
+		"typescript": "^3.4.1"
+	},
+	"dependencies": {
+		"lodash.get": "^4.4.2"
+	},
+	"scripts": {
+		"build": "tsc",
+		"lint": "tslint --project .",
+		"prepare": "npm run build",
+		"pretest": "npm run build"
+	},
+	"description": "Experimental configuration library for typescript",
+	"files": [
+		"dist/**/*.{js,d.ts}",
+		"package.json",
+		"README.md"
+	]
+}
